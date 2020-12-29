@@ -1,0 +1,26 @@
+/* __ALERT_CANCEL__ */
+"__ALERT_CANCEL__" = "キャンセル";
+
+/* __ALERT_OK__ */
+"__ALERT_OK__" = "OK";
+
+/* No comment provided by engineer. */
+"Locate an Infinity Engine game…" = "インフィニティ・エンジン・ゲームを選択してください。";
+
+/* No comment provided by engineer. */
+"Remove game?" = "ゲームを削除しますか？";
+
+/* No comment provided by engineer. */
+"You can restore the game by choosing File -> Open Game from the File menu." = "ファイルメニューから“ゲームを開く...”を選択してゲームを復元することができます。";
+
+/* No comment provided by engineer. */
+"__LOCATION_HINT__" = "~/Beamdog Library/00782、00806、/Applications/Icewind Dale - Enhanced Editionなどを選択してください";
+
+/* No comment provided by engineer. */
+"No chitin.key file found." = "chitin.key が見つかりませんでした。";
+
+/* No comment provided by engineer. */
+"No game app found." = "ゲーム・アプリケーションが見つかりませんでした。";
+
+/* No comment provided by engineer. */
+"Not an Infinity Engine game." = "インフィニティ・エンジン・ゲームではありません。";

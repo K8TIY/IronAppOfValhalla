@@ -1,0 +1,7 @@
+
+[submodule "FlagKit"]
+	path = FlagKit
+	url = https://github.com/madebybowtie/FlagKit.git
+[submodule "libacm"]
+	path = libacm
+	url = https://github.com/markokr/libacm.git

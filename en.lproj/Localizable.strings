@@ -1,0 +1,26 @@
+/* No comment provided by engineer. */
+"__ALERT_CANCEL__" = "Cancel";
+
+/* No comment provided by engineer. */
+"__ALERT_OK__" = "OK";
+
+/* No comment provided by engineer. */
+"Locate an Infinity Engine game…" = "Locate an Infinity Engine game…";
+
+/* No comment provided by engineer. */
+"Remove game?" = "Remove game?";
+
+/* No comment provided by engineer. */
+"You can restore the game by choosing File -> Open Game from the File menu." = "You can restore the game by choosing File -> Open Game from the File menu.";
+
+/* No comment provided by engineer. */
+"__LOCATION_HINT__" = "Infinity Engine games are usually at ~/Beamdog Library/00782 or 00806 etc, or /Applications/Icewind Dale - Enhanced Edition";
+
+/* No comment provided by engineer. */
+"No chitin.key file found." = "No chitin.key file found.";
+
+/* No comment provided by engineer. */
+"No game app found." = "No game app found.";
+
+/* No comment provided by engineer. */
+"Not an Infinity Engine game." = "Not an Infinity Engine game.";

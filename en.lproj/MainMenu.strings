@@ -1,0 +1,149 @@
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "5"; */
+"5.title" = "Bring All to Front";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "19"; */
+"19.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23"; */
+"23.title" = "Minimize";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "24"; */
+"24.title" = "Window";
+
+/* Class = "NSMenu"; title = "MainMenu"; ObjectID = "29"; */
+"29.title" = "MainMenu";
+
+/* Class = "NSMenuItem"; title = "Iron App of Valhalla"; ObjectID = "56"; */
+"56.title" = "Iron App of Valhalla";
+
+/* Class = "NSMenu"; title = "Iron App of Valhalla"; ObjectID = "57"; */
+"57.title" = "Iron App of Valhalla";
+
+/* Class = "NSMenuItem"; title = "About Iron App of Valhalla"; ObjectID = "58"; */
+"58.title" = "About Iron App of Valhalla";
+
+/* Class = "NSMenuItem"; title = "Open Game"; ObjectID = "72"; */
+"72.title" = "Open Game…";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "73"; */
+"73.title" = "Close";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "81"; */
+"81.title" = "File";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "83"; */
+"83.title" = "File";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "103"; */
+"103.title" = "Help";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "106"; */
+"106.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Iron App of Valhalla Help"; ObjectID = "111"; */
+"111.title" = "Iron App of Valhalla Help";
+
+/* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "124"; */
+"124.title" = "Open Recent";
+
+/* Class = "NSMenu"; title = "Open Recent"; ObjectID = "125"; */
+"125.title" = "Open Recent";
+
+/* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "126"; */
+"126.title" = "Clear Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
+"129.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "134"; */
+"134.title" = "Hide Iron App of Valhalla";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "136"; */
+"136.title" = "Quit Iron App of Valhalla";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "157"; */
+"157.title" = "Copy";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "160"; */
+"160.title" = "Cut";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "163"; */
+"163.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "164"; */
+"164.title" = "Delete";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "169"; */
+"169.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "171"; */
+"171.title" = "Paste";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "172"; */
+"172.title" = "Select All";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "203"; */
+"203.title" = "Zoom";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "420"; */
+"420.title" = "Undo";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "422"; */
+"422.title" = "Redo";
+
+/* Class = "NSMenuItem"; title = "Export…"; ObjectID = "1150"; */
+"1150.title" = "Export AIFF…";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "1164"; */
+"1164.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "__DEFAULT_VOLUME__"; ObjectID = "1174"; */
+"1174.title" = "Default Volume";
+
+/* Class = "NSTextFieldCell"; title = "__DEFAULT_LOOP__"; ObjectID = "1196"; */
+"1196.title" = "Loop";
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "1197"; */
+"1197.ibShadowedToolTip" = "Loop";
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "1202"; */
+"1202.ibShadowedToolTip" = "Loop";
+
+/* Class = "NSMenuItem"; title = "Playback"; ObjectID = "1217"; */
+"1217.title" = "Playback";
+
+/* Class = "NSMenu"; title = "Playback"; ObjectID = "1218"; */
+"1218.title" = "Playback";
+
+/* Class = "NSMenuItem"; title = "Rewind"; ObjectID = "1219"; */
+"1219.title" = "Rewind";
+
+/* Class = "NSTextFieldCell"; title = "Currently loading file path"; ObjectID = "Icq-rc-2r9"; */
+"Icq-rc-2r9.title" = "Currently loading file path";
+
+/* Class = "NSWindow"; title = "DB Progress"; ObjectID = "N04-Ey-kqR"; */
+"N04-Ey-kqR.title" = "DB Progress";
+
+/* Class = "NSTextFieldCell"; title = "Preparing game database…"; ObjectID = "bIb-sY-ERp"; */
+"bIb-sY-ERp.title" = "Preparing game database…";
+
+/* Class = "NSWindow"; title = "Games"; ObjectID = "gj8-gx-Vwy"; */
+"gj8-gx-Vwy.title" = "Games";
+
+/* Initial Help Window */
+"aFL-OW-5H3.title" = "Begin by choosing one or more game folders. If you use the Beamdog Client app to install games, they will be located in your home directory with five-digit folder names as in the image below.";
+"lzr-tj-AmZ.title" = "Games installed using the Mac App Store will be in your Applications folder, so you should select the game icon.";
+"kwG-ar-ZOe.title" = "Got It";

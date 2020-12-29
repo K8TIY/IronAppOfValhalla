@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="1157" id="1158"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="MainMenu" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="Iron App of Valhalla" id="56">
+                    <menu key="submenu" title="Iron App of Valhalla" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Iron App of Valhalla" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="202">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="orderFrontPrefsWindow:" target="1157" id="1192"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="139"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="83">
+                    <menu key="submenu" title="File" id="81">
+                        <items>
+                            <menuItem title="__OPEN_GAME__" keyEquivalent="o" id="72">
+                                <connections>
+                                    <action selector="openGameDirectory:" target="H0v-m9-G7B" id="V0o-QW-4BF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="79">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="__CLOSE__" keyEquivalent="w" id="73">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="193"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1152">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="__EXPORT_AIFF__" keyEquivalent="e" id="1150">
+                                <connections>
+                                    <action selector="exportAIFF:" target="-1" id="1159"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="163">
+                    <menu key="submenu" title="Edit" id="169">
+                        <items>
+                            <menuItem title="__UNDO__" keyEquivalent="z" id="420">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="423"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="__REDO__" keyEquivalent="Z" id="422">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="844"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="421">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="__CUT__" keyEquivalent="x" id="160">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="175"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="__COPY__" keyEquivalent="c" id="157">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="181"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="__PASTE__" keyEquivalent="v" id="171">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="176"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="__DELETE__" id="164">
+                                <connections>
+                                    <action selector="delete:" target="-1" id="201"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="__SELECT_ALL__" keyEquivalent="a" id="172">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="179"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Playback" id="1217">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Playback" id="1218">
+                        <items>
+                            <menuItem title="__REWIND__" keyEquivalent="r" id="1219">
+                                <connections>
+                                    <action selector="rewind:" target="-1" id="1222"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="__ZOOM__" id="203">
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="204"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="__MINIMIZE__" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="__BRING_ALL_TO_FRONT__" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="103">
+                    <menu key="submenu" title="Help" id="106">
+                        <items>
+                            <menuItem title="ACM Player Help" id="111">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="122"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="141" y="172"/>
+        </menu>
+        <customObject id="1157" customClass="AppController">
+            <connections>
+                <outlet property="_prefsWindow" destination="1164" id="1193"/>
+            </connections>
+        </customObject>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="Prefs" animationBehavior="default" id="1164" userLabel="Prefs">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="523" y="605" width="333" height="81"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="1165">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="1169">
+                        <rect key="frame" x="17" y="47" width="174" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default Volume" id="1174">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="1195">
+                        <rect key="frame" x="17" y="25" width="174" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Loop" id="1196">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" id="1183">
+                        <rect key="frame" x="220" y="46" width="69" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" controlSize="small" continuous="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="1188">
+                            <font key="font" size="12" name="Helvetica"/>
+                        </sliderCell>
+                        <connections>
+                            <binding destination="1189" name="value" keyPath="values.defaultVol" id="1194">
+                                <dictionary key="options">
+                                    <integer key="NSConditionallySetsEnabled" value="0"/>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </slider>
+                    <button imageHugsTitle="YES" id="1184">
+                        <rect key="frame" x="194" y="41" width="20" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="VolMute" imagePosition="only" alignment="center" id="1187">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" metaFont="label"/>
+                        </buttonCell>
+                    </button>
+                    <button imageHugsTitle="YES" id="1185">
+                        <rect key="frame" x="295" y="41" width="20" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="VolFull" imagePosition="only" alignment="center" id="1186">
+                            <behavior key="behavior" lightByContents="YES"/>
+                            <font key="font" metaFont="label"/>
+                        </buttonCell>
+                    </button>
+                    <button toolTip="__LOOP__" imageHugsTitle="YES" id="1197">
+                        <rect key="frame" x="194" y="20" width="36" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="repeat_embedded" imagePosition="only" alignment="left" alternateImage="repeat_embedded_blue" inset="2" id="1198">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">r</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="1189" name="value" keyPath="values.defaultLoop" id="1200"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="141.5" y="295.5"/>
+        </window>
+        <customObject id="H0v-m9-G7B" customClass="IAoVGameManager">
+            <connections>
+                <outlet property="_dbProgressImage" destination="zWg-5J-Aj5" id="4tw-Jv-j1q"/>
+                <outlet property="_dbProgressPath" destination="0GV-y7-gB2" id="rlS-pR-FAd"/>
+                <outlet property="_dbProgressProgress" destination="sd7-p6-SMD" id="ivo-AL-csT"/>
+                <outlet property="_dbProgressWindow" destination="N04-Ey-kqR" id="rWK-Bf-jz6"/>
+                <outlet property="_helpWindow" destination="jaX-Lp-OUo" id="c4h-Og-IHw"/>
+                <outlet property="_mainWindow" destination="gj8-gx-Vwy" id="dpR-Tb-aS8"/>
+            </connections>
+        </customObject>
+        <userDefaultsController representsSharedInstance="YES" id="1189" userLabel="Defaults Controller"/>
+        <window title="__GAMES__" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="gj8-gx-Vwy">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="762" y="379" width="480" height="105"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1129"/>
+            <view key="contentView" wantsLayer="YES" id="HMW-Z0-UCx">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="boj-Mk-EV7"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="494.5"/>
+        </window>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="jaX-Lp-OUo" userLabel="Help Window">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="762" y="379" width="480" height="465"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1129"/>
+            <view key="contentView" wantsLayer="YES" id="Hmk-4z-yfz">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="465"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="KGt-J4-nfL">
+                        <rect key="frame" x="19" y="379" width="444" height="66"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" id="aFL-OW-5H3">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Begin by choosing one or more game folders. If you use the Beamdog Client app to install games, they will be located in your home directory with five-digit folder names as in the image below.</string>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9x0-qp-6FV">
+                        <rect key="frame" x="20" y="100" width="440" height="271"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" focusRingType="none" alignment="left" imageScaling="proportionallyUpOrDown" image="EEScreen" id="PTn-It-L94"/>
+                    </imageView>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="rQJ-Gy-FDR">
+                        <rect key="frame" x="19" y="49" width="444" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" title="Games installed using the Mac App Store will be in your Applications folder, so you should select the game icon." id="lzr-tj-AmZ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="Ww2-Ps-12Q">
+                        <rect key="frame" x="189" y="13" width="102" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Got It" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kwG-ar-ZOe">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="dismissInitialHelp:" target="H0v-m9-G7B" id="g0R-aS-IEn"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="7cY-M9-GQj"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="880.5"/>
+        </window>
+        <window title="DB Progress" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="N04-Ey-kqR">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="213" y="227" width="583" height="116"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1130"/>
+            <view key="contentView" id="nxU-gb-3IU">
+                <rect key="frame" x="0.0" y="0.0" width="583" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zWg-5J-Aj5">
+                        <rect key="frame" x="20" y="20" width="76" height="76"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jHe-tJ-91v"/>
+                    </imageView>
+                    <progressIndicator wantsLayer="YES" maxValue="100" style="bar" id="sd7-p6-SMD">
+                        <rect key="frame" x="104" y="48" width="459" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="snk-nl-iiI">
+                        <rect key="frame" x="102" y="79" width="396" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Preparing game database…" id="bIb-sY-ERp">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="0GV-y7-gB2">
+                        <rect key="frame" x="102" y="24" width="463" height="14"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Currently loading file path" id="Icq-rc-2r9">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="142" y="1266"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="EEScreen" width="911" height="560"/>
+        <image name="VolFull" width="18" height="17"/>
+        <image name="VolMute" width="18" height="17"/>
+        <image name="repeat_embedded" width="33" height="20"/>
+        <image name="repeat_embedded_blue" width="33" height="20"/>
+    </resources>
+</document>

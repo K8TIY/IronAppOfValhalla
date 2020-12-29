@@ -1,0 +1,149 @@
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "5"; */
+"5.title" = "すべてを手前に移動";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "19"; */
+"19.title" = "ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "23"; */
+"23.title" = "しまう";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "24"; */
+"24.title" = "ウインドウ";
+
+/* Class = "NSMenu"; title = "MainMenu"; ObjectID = "29"; */
+"29.title" = "MainMenu";
+
+/* Class = "NSMenuItem"; title = "Iron App of Valhalla"; ObjectID = "56"; */
+"56.title" = "Iron App of Valhalla";
+
+/* Class = "NSMenu"; title = "Iron App of Valhalla"; ObjectID = "57"; */
+"57.title" = "Iron App of Valhalla";
+
+/* Class = "NSMenuItem"; title = "About Iron App of Valhalla"; ObjectID = "58"; */
+"58.title" = "Iron App of Valhallaについて";
+
+/* Class = "NSMenuItem"; title = "__OPEN_GAME__"; ObjectID = "72"; */
+"72.title" = "ゲームを開く…";
+
+/* Class = "NSMenuItem"; title = "__CLOSE__"; ObjectID = "73"; */
+"73.title" = "閉じる";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "81"; */
+"81.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "83"; */
+"83.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "103"; */
+"103.title" = "ヘルプ";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "106"; */
+"106.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "__HELP_ITEM__"; ObjectID = "111"; */
+"111.title" = "Iron App of Valhalla ヘルプ";
+
+/* Class = "NSMenuItem"; title = "__OPEN_RECENT__"; ObjectID = "124"; */
+"124.title" = "__OPEN_RECENT__";
+
+/* Class = "NSMenu"; title = "Open Recent"; ObjectID = "125"; */
+"125.title" = "最近使った項目を開く";
+
+/* Class = "NSMenuItem"; title = "__CLEAR_MENU__"; ObjectID = "126"; */
+"126.title" = "__CLEAR_MENU__";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
+"129.title" = "環境設定…";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Hide"; ObjectID = "134"; */
+"134.title" = "Iron App of Valhallaを隠す";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "136"; */
+"136.title" = "Iron App of Valhallaを終了";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "ほかを隠す";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "すべてを表示";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "157"; */
+"157.title" = "コピー";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "160"; */
+"160.title" = "カット";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "163"; */
+"163.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "164"; */
+"164.title" = "削除";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "169"; */
+"169.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "171"; */
+"171.title" = "ペースト";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "172"; */
+"172.title" = "すべてを選択";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "203"; */
+"203.title" = "拡大／縮小";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "420"; */
+"420.title" = "取り消す";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "422"; */
+"422.title" = "やり直す";
+
+/* Class = "NSMenuItem"; title = "__EXPORT_AIFF__"; ObjectID = "1150"; */
+"1150.title" = "AIFF オーディオを書き出す...";
+
+/* Class = "NSWindow"; title = "__PREFERENCES__"; ObjectID = "1164"; */
+"1164.title" = "環境設定";
+
+/* Class = "NSTextFieldCell"; title = "__DEFAULT_VOLUME__"; ObjectID = "1174"; */
+"1174.title" = "デフォルトの音量";
+
+/* Class = "NSTextFieldCell"; title = "__DEFAULT_LOOP__"; ObjectID = "1196"; */
+"1196.title" = "ループ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "1197"; */
+"1197.ibShadowedToolTip" = "ループ";
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "1202"; */
+"1202.ibShadowedToolTip" = "ループ";
+
+/* Class = "NSMenuItem"; title = "Playback"; ObjectID = "1217"; */
+"1217.title" = "再生";
+
+/* Class = "NSMenu"; title = "Playback"; ObjectID = "1218"; */
+"1218.title" = "再生";
+
+/* Class = "NSMenuItem"; title = "__REWIND__"; ObjectID = "1219"; */
+"1219.title" = "巻き戻し";
+
+/* Class = "NSTextFieldCell"; title = "Currently loading file path"; ObjectID = "Icq-rc-2r9"; */
+"Icq-rc-2r9.title" = "Currently loading file path";
+
+/* Class = "NSWindow"; title = "DB Progress"; ObjectID = "N04-Ey-kqR"; */
+"N04-Ey-kqR.title" = "DB Progress";
+
+/* Class = "NSTextFieldCell"; title = "Preparing game database…"; ObjectID = "bIb-sY-ERp"; */
+"bIb-sY-ERp.title" = "ゲーム・データベースを準備中…";
+
+/* Class = "NSWindow"; title = "Games"; ObjectID = "gj8-gx-Vwy"; */
+"gj8-gx-Vwy.title" = "ゲーム";
+
+/* Initial Help Window */
+"aFL-OW-5H3.title" = "初めにゲーム・フォルダを選択してください。 Beamdog Client を使ってゲームをインストールした場合, 下の画像のようにホームディレクトリの5桁の名のフォルダにあります。";
+"lzr-tj-AmZ.title" = "Mac App Store を使ってインストールしたゲームは, “アプリケーション”フォルダにあるゲームアイコンを選択してください。";
+"kwG-ar-ZOe.title" = "分かった";
