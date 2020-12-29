@@ -1,0 +1,96 @@
+
+/* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "1wh-tg-ZAe"; */
+"1wh-tg-ZAe.headerCell.title" = "Size";
+
+/* Class = "NSTableColumn"; headerCell.title = "File"; ObjectID = "4sG-8d-Bcf"; */
+"4sG-8d-Bcf.headerCell.title" = "File";
+
+/* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "6rC-6h-w7r"; */
+"6rC-6h-w7r.headerCell.title" = "Type";
+
+/* Class = "NSTableColumn"; headerCell.title = "File"; ObjectID = "9cf-W6-5px"; */
+"9cf-W6-5px.headerCell.title" = "File";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "GsK-32-A5U"; */
+"GsK-32-A5U.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "MBL-g1-8ei"; */
+"MBL-g1-8ei.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "OUJ-K4-98X"; */
+"OUJ-K4-98X.title" = "Text Cell";
+
+/* Class = "NSWindow"; title = "Game Window"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "Game Window";
+
+/* Class = "NSTableColumn"; headerCell.title = "Title"; ObjectID = "RH6-TD-W0n"; */
+"RH6-TD-W0n.headerCell.title" = "Title";
+
+/* Class = "NSTableColumn"; headerCell.title = "Locator"; ObjectID = "RMl-W6-7ch"; */
+"RMl-W6-7ch.headerCell.title" = "Locator";
+
+/* Class = "NSTabViewItem"; label = "Voices"; ObjectID = "RUg-kw-p1P"; */
+"RUg-kw-p1P.label" = "Voices";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "RZD-SP-W1Y"; */
+"RZD-SP-W1Y.title" = "Text Cell";
+
+/* Class = "NSTabViewItem"; label = "Music"; ObjectID = "UHJ-Vs-Pfx"; */
+"UHJ-Vs-Pfx.label" = "Music";
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "YAd-Pb-wBJ"; */
+"YAd-Pb-wBJ.ibShadowedToolTip" = "Loop";
+
+/* Class = "NSMenuItem"; title = "__REVEAL_IN_FINDER__"; ObjectID = "Z4s-kP-uEC"; */
+"Z4s-kP-uEC.title" = "Reveal in Finder";
+
+/* Class = "NSTabViewItem"; label = "Resources"; ObjectID = "ZLo-gy-J0b"; */
+"ZLo-gy-J0b.label" = "Resources";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Zr9-M9-Y9z"; */
+"Zr9-M9-Y9z.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "acd-cE-G3Q"; */
+"acd-cE-G3Q.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "bKq-VB-xub"; */
+"bKq-VB-xub.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Format"; ObjectID = "gW9-vL-OOd"; */
+"gW9-vL-OOd.headerCell.title" = "Format";
+
+/* Class = "NSTableColumn"; headerCell.title = "Resources"; ObjectID = "gvR-Ho-Rm4"; */
+"gvR-Ho-Rm4.headerCell.title" = "Resources";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ktS-p5-6FN"; */
+"ktS-p5-6FN.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "lRa-zj-ZGY"; */
+"lRa-zj-ZGY.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "File"; ObjectID = "lgP-0X-hIq"; */
+"lgP-0X-hIq.headerCell.title" = "File";
+
+/* Class = "NSMenuItem"; title = "__REVEAL_IN_FINDER__"; ObjectID = "n4i-hE-uW4"; */
+"n4i-hE-uW4.title" = "Reveal in Finder";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "nnH-qt-StP"; */
+"nnH-qt-StP.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Text"; ObjectID = "oHM-o6-rnC"; */
+"oHM-o6-rnC.headerCell.title" = "Text";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "oTy-3G-oGE"; */
+"oTy-3G-oGE.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pWD-JE-ERn"; */
+"pWD-JE-ERn.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Text"; ObjectID = "vyn-qb-2Mq"; */
+"vyn-qb-2Mq.headerCell.title" = "Text";
+
+/* Class = "NSTableColumn"; headerCell.title = "Resource"; ObjectID = "yhS-j8-J5S"; */
+"yhS-j8-J5S.headerCell.title" = "Resource";
+
+/* Class = "NSMenuItem"; title = "__REVEAL_IN_FINDER__"; ObjectID = "zYF-jx-2jY"; */
+"zYF-jx-2jY.title" = "Reveal in Finder";

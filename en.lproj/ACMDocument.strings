@@ -1,0 +1,12 @@
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "34"; */
+"34.ibShadowedToolTip" = "Loop";
+
+/* Class = "NSTextFieldCell"; title = "0:00:00"; ObjectID = "cuB-zx-FtG"; */
+"cuB-zx-FtG.title" = "0:00:00";
+
+/* Class = "NSTextFieldCell"; title = "0:00:00"; ObjectID = "dNr-dg-NkM"; */
+"dNr-dg-NkM.title" = "0:00:00";
+
+/* Class = "NSTextFieldCell"; title = "Track Title"; ObjectID = "weF-dj-LjE"; */
+"weF-dj-LjE.title" = "Track Title";

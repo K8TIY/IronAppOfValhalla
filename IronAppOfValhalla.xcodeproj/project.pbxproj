@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320D65B821E54E4F00B07FA1 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D65B621E54E4F00B07FA1 /* GameWindow.m */; };
+		320D65C021EE598200B07FA1 /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D65BF21EE598100B07FA1 /* GameButton.m */; };
+		320D65C521EE672F00B07FA1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D65C421EE672F00B07FA1 /* libsqlite3.tbd */; };
+		320D65C821F0F40F00B07FA1 /* GameDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 320D65C721F0F40F00B07FA1 /* GameDatabase.m */; };
+		323B464916C2F9D30045C19E /* KEYData.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B464816C2F9D30045C19E /* KEYData.m */; };
+		323B499D16C9A7DB0045C19E /* TLKData.m in Sources */ = {isa = PBXBuildFile; fileRef = 323B499C16C9A7DB0045C19E /* TLKData.m */; };
+		32504E5E124BD9F8004B7654 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32504E5D124BD9F8004B7654 /* decode.c */; };
+		32504E63124BDBE3004B7654 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 32504E62124BDBE3004B7654 /* util.c */; };
+		3267F0DF16B3240C00F9507E /* BIFFData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3267F0DE16B3240C00F9507E /* BIFFData.m */; };
+		32815E051295C34400D4672E /* VolMute.png in Resources */ = {isa = PBXBuildFile; fileRef = 32815E031295C34400D4672E /* VolMute.png */; };
+		32815E061295C34400D4672E /* VolFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 32815E041295C34400D4672E /* VolFull.png */; };
+		329D9CB316DC1F3600CC53EE /* ACMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 329D9CB216DC1F3600CC53EE /* ACMData.m */; };
+		32A6716C225BC27F006EAA53 /* voices.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32A6716E225BC27F006EAA53 /* voices.strings */; };
+		32A67173225BE10B006EAA53 /* IAoVGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A67172225BE10B006EAA53 /* IAoVGameManager.m */; };
+		32BA654020DC49E100E307EF /* IAoVGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BA653E20DC49E100E307EF /* IAoVGame.m */; };
+		32C1C7A816D6D94E00652861 /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32C1C7A716D6D94E00652861 /* defaults.plist */; };
+		32D1500D228DFB7700A12FAD /* EEScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D1500C228DFB7700A12FAD /* EEScreen.png */; };
+		32DDBA0221C4419500B32A59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323C3D5520E43DDC008F6688 /* QuartzCore.framework */; };
+		32DDBA0521C44C8F00B32A59 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DDBA0421C44C8F00B32A59 /* libz.tbd */; };
+		32E264AB21F79B4400FA1DEF /* FileTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32E264AA21F79B4400FA1DEF /* FileTypes.plist */; };
+		32E264AD21F925EE00FA1DEF /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E264AC21F925EE00FA1DEF /* FlagKit.xcassets */; };
+		32E264B121FA3F8B00FA1DEF /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E264B021FA3F8B00FA1DEF /* libsndfile.a */; };
+		32E264CB21FB743100FA1DEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E264CA21FB743100FA1DEF /* Images.xcassets */; };
+		32E3D12F116BE7EC0078CCF7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3D12E116BE7EC0078CCF7 /* AudioToolbox.framework */; };
+		32E54526223ABD40007A7296 /* IAoVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E54525223ABD40007A7296 /* IAoVTableView.m */; };
+		32E5452F22419139007A7296 /* GameWindow_Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E5452E22419139007A7296 /* GameWindow_Resources.m */; };
+		32E5453222429BBB007A7296 /* GameWindow_Music.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E5453122429BBB007A7296 /* GameWindow_Music.m */; };
+		32E545352242BCF7007A7296 /* GameWindow_Voices.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E545342242BCF7007A7296 /* GameWindow_Voices.m */; };
+		32E5453722441989007A7296 /* hexdump.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BEBF7222207380002CE668 /* hexdump.m */; };
+		32F1DE0022527605009A492F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32F1DDFE22527605009A492F /* InfoPlist.strings */; };
+		32F1DE0422527636009A492F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32F1DE0222527636009A492F /* Localizable.strings */; };
+		32FA7F712257FE9000F6C01D /* NSIndexSet_IndexAtIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FA7F702257FE9000F6C01D /* NSIndexSet_IndexAtIndex.m */; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		A60DAA522200D298000D4DA0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A60DAA502200D298000D4DA0 /* Credits.rtf */; };
+		A6153A502201FF8B00E4A91D /* GameWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6153A4E2201FF8B00E4A91D /* GameWindow.xib */; };
+		A6444DB608FAE2E700F239CA /* IAoVProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6444DB408FAE2E700F239CA /* IAoVProgressView.m */; };
+		A6494CEE08F8713500BAE386 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A6494CE608F8713500BAE386 /* pause.png */; };
+		A6494CEF08F8713500BAE386 /* pause_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A6494CE708F8713500BAE386 /* pause_blue.png */; };
+		A6494CF008F8713500BAE386 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A6494CE808F8713500BAE386 /* play.png */; };
+		A6494CF108F8713500BAE386 /* play_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A6494CE908F8713500BAE386 /* play_blue.png */; };
+		A65BB89708F64BAC005D6F82 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65BB89508F64BAC005D6F82 /* AppController.m */; };
+		A6610E0B08F3762300111B1F /* ACMRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A6610E0108F3762300111B1F /* ACMRenderer.m */; };
+		A67FB6F022595CF200624D0E /* bg.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67FB6F222595CF200624D0E /* bg.strings */; };
+		A67FB6F422595D0500624D0E /* bg2.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67FB6F622595D0500624D0E /* bg2.strings */; };
+		A67FB6F822595D0E00624D0E /* iwd.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67FB6FA22595D0E00624D0E /* iwd.strings */; };
+		A69B89D82200D5DC00A62B18 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69B89D62200D5DC00A62B18 /* MainMenu.xib */; };
+		A69B89E422014EF000A62B18 /* MUSData.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B89E322014EF000A62B18 /* MUSData.m */; };
+		A69E079E0E70EC710078AC19 /* mus.py in Resources */ = {isa = PBXBuildFile; fileRef = A69E079D0E70EC710078AC19 /* mus.py */; };
+		A6A820F30F87F8AB0063E4D9 /* repeat_embedded_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A820F10F87F8AB0063E4D9 /* repeat_embedded_blue.png */; };
+		A6A820F40F87F8AB0063E4D9 /* repeat_embedded.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A820F20F87F8AB0063E4D9 /* repeat_embedded.png */; };
+		A6B06A6F22B6ECDD008BDF5C /* songlist.pl in Resources */ = {isa = PBXBuildFile; fileRef = A6B06A6E22B6ECDD008BDF5C /* songlist.pl */; };
+		A6C335B6090F00E50089BBE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		A6C335B7090F00E50089BBE9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
+		A6C335C3090F01F90089BBE9 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C335C2090F01F90089BBE9 /* AudioUnit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		320D65B621E54E4F00B07FA1 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWindow.m; sourceTree = "<group>"; };
+		320D65B721E54E4F00B07FA1 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
+		320D65BE21EE597F00B07FA1 /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
+		320D65BF21EE598100B07FA1 /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
+		320D65C421EE672F00B07FA1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		320D65C621F0F40F00B07FA1 /* GameDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameDatabase.h; sourceTree = "<group>"; };
+		320D65C721F0F40F00B07FA1 /* GameDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameDatabase.m; sourceTree = "<group>"; };
+		323B464716C2F9D30045C19E /* KEYData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KEYData.h; sourceTree = "<group>"; };
+		323B464816C2F9D30045C19E /* KEYData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KEYData.m; sourceTree = "<group>"; };
+		323B499B16C9A7DB0045C19E /* TLKData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLKData.h; sourceTree = "<group>"; };
+		323B499C16C9A7DB0045C19E /* TLKData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLKData.m; sourceTree = "<group>"; };
+		323C3D5520E43DDC008F6688 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		32504E5D124BD9F8004B7654 /* decode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = decode.c; sourceTree = "<group>"; };
+		32504E61124BDA8C004B7654 /* libacm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libacm.h; sourceTree = "<group>"; };
+		32504E62124BDBE3004B7654 /* util.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = util.c; sourceTree = "<group>"; };
+		3267F0DD16B3240C00F9507E /* BIFFData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIFFData.h; sourceTree = "<group>"; };
+		3267F0DE16B3240C00F9507E /* BIFFData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIFFData.m; sourceTree = "<group>"; };
+		3277E2B522946ECA008FFF1E /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		32815E031295C34400D4672E /* VolMute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VolMute.png; sourceTree = "<group>"; };
+		32815E041295C34400D4672E /* VolFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VolFull.png; sourceTree = "<group>"; };
+		329D9CB116DC1F3600CC53EE /* ACMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMData.h; sourceTree = "<group>"; };
+		329D9CB216DC1F3600CC53EE /* ACMData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMData.m; sourceTree = "<group>"; };
+		32A6716D225BC27F006EAA53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/voices.strings; sourceTree = "<group>"; };
+		32A6716F225BC286006EAA53 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/voices.strings; sourceTree = "<group>"; };
+		32A67170225BE078006EAA53 /* CWLSynthesizeSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWLSynthesizeSingleton.h; sourceTree = "<group>"; };
+		32A67171225BE10B006EAA53 /* IAoVGameManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAoVGameManager.h; sourceTree = "<group>"; };
+		32A67172225BE10B006EAA53 /* IAoVGameManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAoVGameManager.m; sourceTree = "<group>"; };
+		32BA653E20DC49E100E307EF /* IAoVGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAoVGame.m; sourceTree = "<group>"; };
+		32BA653F20DC49E100E307EF /* IAoVGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAoVGame.h; sourceTree = "<group>"; };
+		32BEBF7222207380002CE668 /* hexdump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hexdump.m; sourceTree = "<group>"; };
+		32BEBF74222073B2002CE668 /* hexdump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hexdump.h; sourceTree = "<group>"; };
+		32C1C7A716D6D94E00652861 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
+		32CDFD34135CBBF100B3AE32 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = README.md; sourceTree = "<group>"; };
+		32D1500C228DFB7700A12FAD /* EEScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EEScreen.png; sourceTree = "<group>"; };
+		32DBCF750370BD2300C91783 /* IronAppOfValhalla_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IronAppOfValhalla_Prefix.pch; sourceTree = "<group>"; };
+		32DDBA0421C44C8F00B32A59 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		32DDBA0621C4654E00B32A59 /* IronAppOfValhalla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IronAppOfValhalla.entitlements; sourceTree = "<group>"; };
+		32E264AA21F79B4400FA1DEF /* FileTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FileTypes.plist; sourceTree = "<group>"; };
+		32E264AC21F925EE00FA1DEF /* FlagKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = FlagKit.xcassets; path = FlagKit/Assets/FlagKit.xcassets; sourceTree = SOURCE_ROOT; };
+		32E264B021FA3F8B00FA1DEF /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../../usr/local/Cellar/libsndfile/1.0.28/lib/libsndfile.a; sourceTree = "<group>"; };
+		32E264CA21FB743100FA1DEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32E3D12E116BE7EC0078CCF7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		32E54524223ABD40007A7296 /* IAoVTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAoVTableView.h; sourceTree = "<group>"; };
+		32E54525223ABD40007A7296 /* IAoVTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAoVTableView.m; sourceTree = "<group>"; };
+		32E5452D22419139007A7296 /* GameWindow_Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameWindow_Resources.h; sourceTree = "<group>"; };
+		32E5452E22419139007A7296 /* GameWindow_Resources.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWindow_Resources.m; sourceTree = "<group>"; };
+		32E5453022429BBB007A7296 /* GameWindow_Music.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameWindow_Music.h; sourceTree = "<group>"; };
+		32E5453122429BBB007A7296 /* GameWindow_Music.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWindow_Music.m; sourceTree = "<group>"; };
+		32E545332242BCF7007A7296 /* GameWindow_Voices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameWindow_Voices.h; sourceTree = "<group>"; };
+		32E545342242BCF7007A7296 /* GameWindow_Voices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWindow_Voices.m; sourceTree = "<group>"; };
+		32F1DDFC225266CC009A492F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		32F1DDFD225266D3009A492F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		32F1DDFF22527605009A492F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32F1DE012252760D009A492F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32F1DE0322527636009A492F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32F1DE052252763A009A492F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32FA7F6F2257FE9000F6C01D /* NSIndexSet_IndexAtIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSIndexSet_IndexAtIndex.h; sourceTree = "<group>"; };
+		32FA7F702257FE9000F6C01D /* NSIndexSet_IndexAtIndex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSIndexSet_IndexAtIndex.m; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Iron App of Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iron App of Valhalla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60DAA512200D298000D4DA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
+		A6153A4F2201FF8B00E4A91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameWindow.xib; sourceTree = SOURCE_ROOT; };
+		A6183E17220202F600BCFD33 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = ja; path = ja.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A6444DB308FAE2E700F239CA /* IAoVProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAoVProgressView.h; sourceTree = "<group>"; };
+		A6444DB408FAE2E700F239CA /* IAoVProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAoVProgressView.m; sourceTree = "<group>"; };
+		A6494CE608F8713500BAE386 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		A6494CE708F8713500BAE386 /* pause_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_blue.png; sourceTree = "<group>"; };
+		A6494CE808F8713500BAE386 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A6494CE908F8713500BAE386 /* play_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_blue.png; sourceTree = "<group>"; };
+		A65BB89408F64BAC005D6F82 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		A65BB89508F64BAC005D6F82 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		A6610E0108F3762300111B1F /* ACMRenderer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ACMRenderer.m; sourceTree = "<group>"; };
+		A6610E0208F3762300111B1F /* ACMRenderer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ACMRenderer.h; sourceTree = "<group>"; };
+		A67FB6EE2259535A00624D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GameWindow.strings; sourceTree = "<group>"; };
+		A67FB6EF2259536300624D0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/GameWindow.strings; sourceTree = "<group>"; };
+		A67FB6F122595CF200624D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/bg.strings; sourceTree = "<group>"; };
+		A67FB6F322595CFA00624D0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/bg.strings; sourceTree = "<group>"; };
+		A67FB6F522595D0500624D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/bg2.strings; sourceTree = "<group>"; };
+		A67FB6F722595D0800624D0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/bg2.strings; sourceTree = "<group>"; };
+		A67FB6F922595D0E00624D0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/iwd.strings; sourceTree = "<group>"; };
+		A67FB6FB22595D1600624D0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/iwd.strings; sourceTree = "<group>"; };
+		A69B89D72200D5DC00A62B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		A69B89E222014EF000A62B18 /* MUSData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUSData.h; sourceTree = "<group>"; };
+		A69B89E322014EF000A62B18 /* MUSData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUSData.m; sourceTree = "<group>"; };
+		A69E079D0E70EC710078AC19 /* mus.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mus.py; sourceTree = "<group>"; };
+		A6A820F10F87F8AB0063E4D9 /* repeat_embedded_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat_embedded_blue.png; sourceTree = "<group>"; };
+		A6A820F20F87F8AB0063E4D9 /* repeat_embedded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat_embedded.png; sourceTree = "<group>"; };
+		A6B06A6E22B6ECDD008BDF5C /* songlist.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = songlist.pl; sourceTree = "<group>"; };
+		A6C335C2090F01F90089BBE9 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320D65C521EE672F00B07FA1 /* libsqlite3.tbd in Frameworks */,
+				32DDBA0521C44C8F00B32A59 /* libz.tbd in Frameworks */,
+				32DDBA0221C4419500B32A59 /* QuartzCore.framework in Frameworks */,
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				A6C335B6090F00E50089BBE9 /* Foundation.framework in Frameworks */,
+				A6C335B7090F00E50089BBE9 /* AppKit.framework in Frameworks */,
+				32E264B121FA3F8B00FA1DEF /* libsndfile.a in Frameworks */,
+				A6C335C3090F01F90089BBE9 /* AudioUnit.framework in Frameworks */,
+				32E3D12F116BE7EC0078CCF7 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E3D12E116BE7EC0078CCF7 /* AudioToolbox.framework */,
+				A6C335C2090F01F90089BBE9 /* AudioUnit.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				323C3D5520E43DDC008F6688 /* QuartzCore.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* Iron App of Valhalla.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* IronAppOfValhalla */ = {
+			isa = PBXGroup;
+			children = (
+				32A67170225BE078006EAA53 /* CWLSynthesizeSingleton.h */,
+				A65BB89408F64BAC005D6F82 /* AppController.h */,
+				A65BB89508F64BAC005D6F82 /* AppController.m */,
+				32A67171225BE10B006EAA53 /* IAoVGameManager.h */,
+				32A67172225BE10B006EAA53 /* IAoVGameManager.m */,
+				320D65B721E54E4F00B07FA1 /* GameWindow.h */,
+				320D65B621E54E4F00B07FA1 /* GameWindow.m */,
+				32E5453022429BBB007A7296 /* GameWindow_Music.h */,
+				32E5453122429BBB007A7296 /* GameWindow_Music.m */,
+				32E5452D22419139007A7296 /* GameWindow_Resources.h */,
+				32E5452E22419139007A7296 /* GameWindow_Resources.m */,
+				32E545332242BCF7007A7296 /* GameWindow_Voices.h */,
+				32E545342242BCF7007A7296 /* GameWindow_Voices.m */,
+				320D65BE21EE597F00B07FA1 /* GameButton.h */,
+				320D65BF21EE598100B07FA1 /* GameButton.m */,
+				A69B89E222014EF000A62B18 /* MUSData.h */,
+				A69B89E322014EF000A62B18 /* MUSData.m */,
+				A6610E0208F3762300111B1F /* ACMRenderer.h */,
+				A6610E0108F3762300111B1F /* ACMRenderer.m */,
+				329D9CB116DC1F3600CC53EE /* ACMData.h */,
+				329D9CB216DC1F3600CC53EE /* ACMData.m */,
+				A6444DB308FAE2E700F239CA /* IAoVProgressView.h */,
+				A6444DB408FAE2E700F239CA /* IAoVProgressView.m */,
+				32E54524223ABD40007A7296 /* IAoVTableView.h */,
+				32E54525223ABD40007A7296 /* IAoVTableView.m */,
+				3267F0DD16B3240C00F9507E /* BIFFData.h */,
+				3267F0DE16B3240C00F9507E /* BIFFData.m */,
+				323B464716C2F9D30045C19E /* KEYData.h */,
+				323B464816C2F9D30045C19E /* KEYData.m */,
+				323B499B16C9A7DB0045C19E /* TLKData.h */,
+				323B499C16C9A7DB0045C19E /* TLKData.m */,
+				32BA653F20DC49E100E307EF /* IAoVGame.h */,
+				32BA653E20DC49E100E307EF /* IAoVGame.m */,
+				320D65C621F0F40F00B07FA1 /* GameDatabase.h */,
+				320D65C721F0F40F00B07FA1 /* GameDatabase.m */,
+				32FA7F6F2257FE9000F6C01D /* NSIndexSet_IndexAtIndex.h */,
+				32FA7F702257FE9000F6C01D /* NSIndexSet_IndexAtIndex.m */,
+				32BEBF74222073B2002CE668 /* hexdump.h */,
+				32BEBF7222207380002CE668 /* hexdump.m */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				32504E53124BD99C004B7654 /* libacm */,
+				A69E079D0E70EC710078AC19 /* mus.py */,
+				A6B06A6E22B6ECDD008BDF5C /* songlist.pl */,
+				32DBCF750370BD2300C91783 /* IronAppOfValhalla_Prefix.pch */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				32CDFD34135CBBF100B3AE32 /* README.md */,
+				3277E2B522946ECA008FFF1E /* LICENSE.txt */,
+				32153D6B208A8CDD0074C02F /* Libraries */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = IronAppOfValhalla;
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32DDBA0621C4654E00B32A59 /* IronAppOfValhalla.entitlements */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				32E264CA21FB743100FA1DEF /* Images.xcassets */,
+				32E264AC21F925EE00FA1DEF /* FlagKit.xcassets */,
+				A6494CE508F8713500BAE386 /* Graphics */,
+				32E264AA21F79B4400FA1DEF /* FileTypes.plist */,
+				32C1C7A716D6D94E00652861 /* defaults.plist */,
+				32A6716E225BC27F006EAA53 /* voices.strings */,
+				A67FB6F222595CF200624D0E /* bg.strings */,
+				A67FB6F622595D0500624D0E /* bg2.strings */,
+				A67FB6FA22595D0E00624D0E /* iwd.strings */,
+				32F1DE0222527636009A492F /* Localizable.strings */,
+				32F1DDFE22527605009A492F /* InfoPlist.strings */,
+				A69B89D62200D5DC00A62B18 /* MainMenu.xib */,
+				A6153A4E2201FF8B00E4A91D /* GameWindow.xib */,
+				A60DAA502200D298000D4DA0 /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				320D65C421EE672F00B07FA1 /* libsqlite3.tbd */,
+				32DDBA0421C44C8F00B32A59 /* libz.tbd */,
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32153D6B208A8CDD0074C02F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				32E264B021FA3F8B00FA1DEF /* libsndfile.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		32504E53124BD99C004B7654 /* libacm */ = {
+			isa = PBXGroup;
+			children = (
+				32504E61124BDA8C004B7654 /* libacm.h */,
+				32504E5D124BD9F8004B7654 /* decode.c */,
+				32504E62124BDBE3004B7654 /* util.c */,
+			);
+			name = libacm;
+			path = libacm/src;
+			sourceTree = "<group>";
+		};
+		A6494CE508F8713500BAE386 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				32D1500C228DFB7700A12FAD /* EEScreen.png */,
+				A6494CE808F8713500BAE386 /* play.png */,
+				A6494CE908F8713500BAE386 /* play_blue.png */,
+				A6494CE608F8713500BAE386 /* pause.png */,
+				A6494CE708F8713500BAE386 /* pause_blue.png */,
+				A6A820F10F87F8AB0063E4D9 /* repeat_embedded_blue.png */,
+				A6A820F20F87F8AB0063E4D9 /* repeat_embedded.png */,
+				32815E031295C34400D4672E /* VolMute.png */,
+				32815E041295C34400D4672E /* VolFull.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* Iron App of Valhalla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C1726A090D537400E21D11 /* Build configuration list for PBXNativeTarget "Iron App of Valhalla" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Iron App of Valhalla";
+			productInstallPath = "$(HOME)/Applications";
+			productName = IronAppOfValhalla;
+			productReference = 8D15AC370486D014006FF6A4 /* Iron App of Valhalla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					8D15AC270486D014006FF6A4 = {
+						DevelopmentTeam = 2X36V2JWP4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A6C1726E090D537400E21D11 /* Build configuration list for PBXProject "IronAppOfValhalla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				Base,
+				en,
+				ja,
+				fr,
+				de,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* IronAppOfValhalla */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* Iron App of Valhalla */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B06A6F22B6ECDD008BDF5C /* songlist.pl in Resources */,
+				A6494CEE08F8713500BAE386 /* pause.png in Resources */,
+				32E264AD21F925EE00FA1DEF /* FlagKit.xcassets in Resources */,
+				32F1DE0022527605009A492F /* InfoPlist.strings in Resources */,
+				32F1DE0422527636009A492F /* Localizable.strings in Resources */,
+				A6494CEF08F8713500BAE386 /* pause_blue.png in Resources */,
+				A6494CF008F8713500BAE386 /* play.png in Resources */,
+				A60DAA522200D298000D4DA0 /* Credits.rtf in Resources */,
+				32D1500D228DFB7700A12FAD /* EEScreen.png in Resources */,
+				A6494CF108F8713500BAE386 /* play_blue.png in Resources */,
+				A69B89D82200D5DC00A62B18 /* MainMenu.xib in Resources */,
+				32A6716C225BC27F006EAA53 /* voices.strings in Resources */,
+				A69E079E0E70EC710078AC19 /* mus.py in Resources */,
+				32E264CB21FB743100FA1DEF /* Images.xcassets in Resources */,
+				A6A820F30F87F8AB0063E4D9 /* repeat_embedded_blue.png in Resources */,
+				A6153A502201FF8B00E4A91D /* GameWindow.xib in Resources */,
+				A6A820F40F87F8AB0063E4D9 /* repeat_embedded.png in Resources */,
+				32E264AB21F79B4400FA1DEF /* FileTypes.plist in Resources */,
+				32815E051295C34400D4672E /* VolMute.png in Resources */,
+				A67FB6F022595CF200624D0E /* bg.strings in Resources */,
+				32815E061295C34400D4672E /* VolFull.png in Resources */,
+				A67FB6F422595D0500624D0E /* bg2.strings in Resources */,
+				32C1C7A816D6D94E00652861 /* defaults.plist in Resources */,
+				A67FB6F822595D0E00624D0E /* iwd.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				A6610E0B08F3762300111B1F /* ACMRenderer.m in Sources */,
+				32E545352242BCF7007A7296 /* GameWindow_Voices.m in Sources */,
+				A65BB89708F64BAC005D6F82 /* AppController.m in Sources */,
+				32E5453222429BBB007A7296 /* GameWindow_Music.m in Sources */,
+				32A67173225BE10B006EAA53 /* IAoVGameManager.m in Sources */,
+				A6444DB608FAE2E700F239CA /* IAoVProgressView.m in Sources */,
+				32504E5E124BD9F8004B7654 /* decode.c in Sources */,
+				32504E63124BDBE3004B7654 /* util.c in Sources */,
+				A69B89E422014EF000A62B18 /* MUSData.m in Sources */,
+				32E5453722441989007A7296 /* hexdump.m in Sources */,
+				320D65B821E54E4F00B07FA1 /* GameWindow.m in Sources */,
+				3267F0DF16B3240C00F9507E /* BIFFData.m in Sources */,
+				32BA654020DC49E100E307EF /* IAoVGame.m in Sources */,
+				323B464916C2F9D30045C19E /* KEYData.m in Sources */,
+				32E5452F22419139007A7296 /* GameWindow_Resources.m in Sources */,
+				320D65C021EE598200B07FA1 /* GameButton.m in Sources */,
+				323B499D16C9A7DB0045C19E /* TLKData.m in Sources */,
+				32E54526223ABD40007A7296 /* IAoVTableView.m in Sources */,
+				32FA7F712257FE9000F6C01D /* NSIndexSet_IndexAtIndex.m in Sources */,
+				320D65C821F0F40F00B07FA1 /* GameDatabase.m in Sources */,
+				329D9CB316DC1F3600CC53EE /* ACMData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32A6716E225BC27F006EAA53 /* voices.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A6716D225BC27F006EAA53 /* en */,
+				32A6716F225BC286006EAA53 /* ja */,
+			);
+			name = voices.strings;
+			sourceTree = "<group>";
+		};
+		32F1DDFE22527605009A492F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F1DDFF22527605009A492F /* ja */,
+				32F1DE012252760D009A492F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32F1DE0222527636009A492F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F1DE0322527636009A492F /* ja */,
+				32F1DE052252763A009A492F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A60DAA502200D298000D4DA0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A60DAA512200D298000D4DA0 /* en */,
+				A6183E17220202F600BCFD33 /* ja */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A6153A4E2201FF8B00E4A91D /* GameWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6153A4F2201FF8B00E4A91D /* Base */,
+				A67FB6EE2259535A00624D0E /* en */,
+				A67FB6EF2259536300624D0E /* ja */,
+			);
+			name = GameWindow.xib;
+			sourceTree = "<group>";
+		};
+		A67FB6F222595CF200624D0E /* bg.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67FB6F122595CF200624D0E /* en */,
+				A67FB6F322595CFA00624D0E /* ja */,
+			);
+			name = bg.strings;
+			sourceTree = "<group>";
+		};
+		A67FB6F622595D0500624D0E /* bg2.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67FB6F522595D0500624D0E /* en */,
+				A67FB6F722595D0800624D0E /* ja */,
+			);
+			name = bg2.strings;
+			sourceTree = "<group>";
+		};
+		A67FB6FA22595D0E00624D0E /* iwd.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67FB6F922595D0E00624D0E /* en */,
+				A67FB6FB22595D1600624D0E /* ja */,
+			);
+			name = iwd.strings;
+			sourceTree = "<group>";
+		};
+		A69B89D62200D5DC00A62B18 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A69B89D72200D5DC00A62B18 /* Base */,
+				32F1DDFC225266CC009A492F /* en */,
+				32F1DDFD225266D3009A492F /* ja */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6C1726B090D537400E21D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = IronAppOfValhalla.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2X36V2JWP4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IronAppOfValhalla_Prefix.pch;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libacm/src\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blugs.IronAppOfValhalla;
+				PRODUCT_NAME = "Iron App of Valhalla";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				USE_HEADERMAP = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A6C1726C090D537400E21D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = IronAppOfValhalla.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2X36V2JWP4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IronAppOfValhalla_Prefix.pch;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libacm/src\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libsndfile/1.0.28/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blugs.IronAppOfValhalla;
+				PRODUCT_NAME = "Iron App of Valhalla";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				USE_HEADERMAP = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A6C1726F090D537400E21D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libacm/src\"/**",
+					"\"$(SRCROOT)/vorbis/include/vorbis\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		A6C17270090D537400E21D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libacm/src\"/**",
+					"\"$(SRCROOT)/vorbis/include/vorbis\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6C1726A090D537400E21D11 /* Build configuration list for PBXNativeTarget "Iron App of Valhalla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C1726B090D537400E21D11 /* Debug */,
+				A6C1726C090D537400E21D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A6C1726E090D537400E21D11 /* Build configuration list for PBXProject "IronAppOfValhalla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C1726F090D537400E21D11 /* Debug */,
+				A6C17270090D537400E21D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

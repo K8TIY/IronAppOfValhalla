@@ -1,0 +1,42 @@
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "5"; */
+"5.title" = "Window";
+
+/* Class = "NSTableColumn"; headerCell.title = "__FORMAT__"; ObjectID = "100026"; */
+"100026.headerCell.title" = "Format";
+
+/* Class = "NSTableColumn"; headerCell.title = "__LOC__"; ObjectID = "100027"; */
+"100027.headerCell.title" = "Locator";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "100028"; */
+"100028.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "100029"; */
+"100029.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "__LEN__"; ObjectID = "100030"; */
+"100030.headerCell.title" = "Length";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "100031"; */
+"100031.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "__RES__"; ObjectID = "100032"; */
+"100032.headerCell.title" = "Resource";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "100033"; */
+"100033.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "__TEXT__"; ObjectID = "100034"; */
+"100034.headerCell.title" = "Text";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "100035"; */
+"100035.title" = "Text Cell";
+
+/* Class = "NSButton"; ibShadowedToolTip = "__LOOP__"; ObjectID = "100126"; */
+"100126.ibShadowedToolTip" = "Loop";
+
+/* Class = "NSTextFieldCell"; title = "0:00:00"; ObjectID = "DBQ-Kd-o1O"; */
+"DBQ-Kd-o1O.title" = "0:00:00";
+
+/* Class = "NSTextFieldCell"; title = "0:00:00"; ObjectID = "H6O-T5-eMB"; */
+"H6O-T5-eMB.title" = "0:00:00";
