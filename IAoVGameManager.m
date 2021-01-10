@@ -1,7 +1,7 @@
 #import "IAoVGameManager.h"
 
-#define kGameButtonWidth 90
-#define kGameButtonHeight 110
+#define kGameButtonWidth 330
+#define kGameButtonHeight 100
 
 @interface IAoVGameManager (Private)
 -(void)_addGame:(IAoVGame*)game;
@@ -71,8 +71,7 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
 -(void)_addGame:(IAoVGame*)game
 {
   NSUInteger n = [_games count];
-  NSRect frame = NSMakeRect(n * kGameButtonWidth, 0,
-                            kGameButtonWidth, kGameButtonHeight);
+  NSRect frame = NSMakeRect(0, 0, kGameButtonWidth, kGameButtonHeight);
   GameButton* button = [[GameButton alloc] initWithFrame:frame];
   [button setTarget:self];
   [button setDelegate:self];
@@ -85,15 +84,16 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
   [_gameWindows addObject:(GameWindow*)[NSNull null]];
   [button release];
   [_games addObject:game];
+  [self _recalculateButtonFrames];
   [self _resizeMainWindow];
 }
 
 -(void)_recalculateButtonFrames
 {
   NSUInteger n = 0;
-  for (NSButton* button in _buttons)
+  for (NSButton* button in [[_buttons reverseObjectEnumerator] allObjects])
   {
-    NSRect frame = NSMakeRect(n * kGameButtonWidth, 0,
+    NSRect frame = NSMakeRect(0, n * kGameButtonHeight,
                               kGameButtonWidth, kGameButtonHeight);
     [button setFrame:frame];
     n++;
@@ -105,12 +105,11 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
   NSUInteger n = [_games count];
   if (n == 0) return;
   [_mainWindow contentView].autoresizingMask = NSViewMaxYMargin;
-  NSRect viewScreenFrame = NSMakeRect(0, 0, kGameButtonWidth * n, kGameButtonHeight);
+  NSRect viewScreenFrame = NSMakeRect(0, 0, kGameButtonWidth, kGameButtonHeight * n);
   viewScreenFrame.origin = _mainWindow.frame.origin;
   [_mainWindow setContentSize:viewScreenFrame.size];
   CGFloat titleBarHeight = _mainWindow.frame.size.height - ((NSView*)_mainWindow.contentView).frame.size.height;
   CGSize windowSize = CGSizeMake(viewScreenFrame.size.width, viewScreenFrame.size.height + titleBarHeight);
-  // Optional: keep it centered
   float originX = _mainWindow.frame.origin.x + (_mainWindow.frame.size.width - windowSize.width) / 2;
   float originY = _mainWindow.frame.origin.y + (_mainWindow.frame.size.height - windowSize.height) / 2;
   NSRect windowFrame = CGRectMake(originX, originY, windowSize.width, windowSize.height);
@@ -239,7 +238,7 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
 @end
 
 /*
-Copyright © 2010-2019, BLUGS.COM LLC
+Copyright © 2010-2021, BLUGS.COM LLC
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
