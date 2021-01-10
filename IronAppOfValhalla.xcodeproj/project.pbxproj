@@ -28,7 +28,6 @@
 		32DDBA0521C44C8F00B32A59 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DDBA0421C44C8F00B32A59 /* libz.tbd */; };
 		32E264AB21F79B4400FA1DEF /* FileTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32E264AA21F79B4400FA1DEF /* FileTypes.plist */; };
 		32E264AD21F925EE00FA1DEF /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E264AC21F925EE00FA1DEF /* FlagKit.xcassets */; };
-		32E264B121FA3F8B00FA1DEF /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E264B021FA3F8B00FA1DEF /* libsndfile.a */; };
 		32E264CB21FB743100FA1DEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E264CA21FB743100FA1DEF /* Images.xcassets */; };
 		32E3D12F116BE7EC0078CCF7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3D12E116BE7EC0078CCF7 /* AudioToolbox.framework */; };
 		32E54526223ABD40007A7296 /* IAoVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E54525223ABD40007A7296 /* IAoVTableView.m */; };
@@ -62,6 +61,12 @@
 		A6C335B6090F00E50089BBE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
 		A6C335B7090F00E50089BBE9 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
 		A6C335C3090F01F90089BBE9 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C335C2090F01F90089BBE9 /* AudioUnit.framework */; };
+		A6CDFA8625A3CC2C0014622B /* libsndfile_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CDFA8525A3CC2C0014622B /* libsndfile_universal.a */; };
+		A6CDFA8925A3CE0E0014622B /* libFLAC_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CDFA8825A3CE0E0014622B /* libFLAC_universal.a */; };
+		A6CDFA8C25A3CE920014622B /* libopus_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CDFA8B25A3CE920014622B /* libopus_universal.a */; };
+		A6CDFA8E25A3CE9E0014622B /* libvorbis_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CDFA8D25A3CE9E0014622B /* libvorbis_universal.a */; };
+		A6CDFA9025A3CEAF0014622B /* libogg_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CDFA8F25A3CEAF0014622B /* libogg_universal.a */; };
+		A6CDFA9325A3D40E0014622B /* libvorbisenc_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CDFA9225A3D40E0014622B /* libvorbisenc_universal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,7 +113,6 @@
 		32DDBA0621C4654E00B32A59 /* IronAppOfValhalla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IronAppOfValhalla.entitlements; sourceTree = "<group>"; };
 		32E264AA21F79B4400FA1DEF /* FileTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FileTypes.plist; sourceTree = "<group>"; };
 		32E264AC21F925EE00FA1DEF /* FlagKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = FlagKit.xcassets; path = FlagKit/Assets/FlagKit.xcassets; sourceTree = SOURCE_ROOT; };
-		32E264B021FA3F8B00FA1DEF /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../../usr/local/Cellar/libsndfile/1.0.28/lib/libsndfile.a; sourceTree = "<group>"; };
 		32E264CA21FB743100FA1DEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32E3D12E116BE7EC0078CCF7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		32E54524223ABD40007A7296 /* IAoVTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAoVTableView.h; sourceTree = "<group>"; };
@@ -158,6 +162,13 @@
 		A6A820F20F87F8AB0063E4D9 /* repeat_embedded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat_embedded.png; sourceTree = "<group>"; };
 		A6B06A6E22B6ECDD008BDF5C /* songlist.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = songlist.pl; sourceTree = "<group>"; };
 		A6C335C2090F01F90089BBE9 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		A6CDFA8525A3CC2C0014622B /* libsndfile_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile_universal.a; path = universal_libraries/libsndfile_universal.a; sourceTree = SOURCE_ROOT; };
+		A6CDFA8825A3CE0E0014622B /* libFLAC_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC_universal.a; path = universal_libraries/libFLAC_universal.a; sourceTree = SOURCE_ROOT; };
+		A6CDFA8B25A3CE920014622B /* libopus_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus_universal.a; path = universal_libraries/libopus_universal.a; sourceTree = SOURCE_ROOT; };
+		A6CDFA8D25A3CE9E0014622B /* libvorbis_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbis_universal.a; path = universal_libraries/libvorbis_universal.a; sourceTree = SOURCE_ROOT; };
+		A6CDFA8F25A3CEAF0014622B /* libogg_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libogg_universal.a; path = universal_libraries/libogg_universal.a; sourceTree = SOURCE_ROOT; };
+		A6CDFA9225A3D40E0014622B /* libvorbisenc_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisenc_universal.a; path = universal_libraries/libvorbisenc_universal.a; sourceTree = SOURCE_ROOT; };
+		A6CDFA9525A3D93C0014622B /* create_universal_libraries.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = create_universal_libraries.pl; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,13 +176,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CDFA8E25A3CE9E0014622B /* libvorbis_universal.a in Frameworks */,
 				320D65C521EE672F00B07FA1 /* libsqlite3.tbd in Frameworks */,
+				A6CDFA8C25A3CE920014622B /* libopus_universal.a in Frameworks */,
+				A6CDFA8925A3CE0E0014622B /* libFLAC_universal.a in Frameworks */,
 				32DDBA0521C44C8F00B32A59 /* libz.tbd in Frameworks */,
 				32DDBA0221C4419500B32A59 /* QuartzCore.framework in Frameworks */,
+				A6CDFA9025A3CEAF0014622B /* libogg_universal.a in Frameworks */,
+				A6CDFA8625A3CC2C0014622B /* libsndfile_universal.a in Frameworks */,
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				A6CDFA9325A3D40E0014622B /* libvorbisenc_universal.a in Frameworks */,
 				A6C335B6090F00E50089BBE9 /* Foundation.framework in Frameworks */,
 				A6C335B7090F00E50089BBE9 /* AppKit.framework in Frameworks */,
-				32E264B121FA3F8B00FA1DEF /* libsndfile.a in Frameworks */,
 				A6C335C3090F01F90089BBE9 /* AudioUnit.framework in Frameworks */,
 				32E3D12F116BE7EC0078CCF7 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -302,7 +318,13 @@
 		32153D6B208A8CDD0074C02F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				32E264B021FA3F8B00FA1DEF /* libsndfile.a */,
+				A6CDFA9525A3D93C0014622B /* create_universal_libraries.pl */,
+				A6CDFA8525A3CC2C0014622B /* libsndfile_universal.a */,
+				A6CDFA8825A3CE0E0014622B /* libFLAC_universal.a */,
+				A6CDFA8F25A3CEAF0014622B /* libogg_universal.a */,
+				A6CDFA8B25A3CE920014622B /* libopus_universal.a */,
+				A6CDFA8D25A3CE9E0014622B /* libvorbis_universal.a */,
+				A6CDFA9225A3D40E0014622B /* libvorbisenc_universal.a */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -584,7 +606,9 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					/usr/local/lib/,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/universal_libraries",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "";
@@ -634,7 +658,9 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/libsndfile/1.0.28/lib,
+					/usr/local/lib,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/universal_libraries",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "";
@@ -653,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -703,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;

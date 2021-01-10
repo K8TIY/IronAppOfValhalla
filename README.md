@@ -5,13 +5,18 @@ alt="Iron App of Valhalla Icon"/>
 Infinity Engine audio exploration
 
 
-#### A macOS application for exploring the music, voices, and sounds of Infinity Engine games like _Baldur's Gate: Enhanced Edition_, _Baldur's Gate II: Enhanced Edition_, and _Icewind Dale: Enhanced Edition_.
+#### A macOS application for exploring the music, voices, and sounds of Infinity
+Engine games like _Baldur's Gate: Enhanced Edition_, _Baldur's Gate II: Enhanced Edition_,
+and *Icewind Dale: Enhanced Edition*.
 
-_It will not summon a 9th level berserker warrior to fight for you, but it will allow you to peer inside the game's audio assets._
+*It will not summon a 9th level berserker warrior to fight for you, but it will allow you to peer
+inside the game's audio assets.*
 
-**Note: you must have one or more of the abovementioned games installed, either from the App Store, or from Beamdog. Iron App does not come with any audio goodies of its own.**  
+**Note: you must have one or more of the abovementioned games installed,
+either from the App Store, or from Beamdog. Iron App does not come with any audio
+goodies of its own.**  
 
-Coming soon to the Mac App Store.
+Available on the [Mac App Store](https://apps.apple.com/us/app/iron-app-of-valhalla/id1464598047).
 
 Released under the MIT license.
 
@@ -32,7 +37,9 @@ Released under the MIT license.
 ```
 git clone https://github.com/markokr/libacm.git
 git clone https://github.com/madebybowtie/FlagKit.git
-brew install libsndfile
+# Homebrew hack to create universal Intel/ARM libsndfile libraries
+# I install perlbrew to run this script which requires JSON::PP
+./create_universal_libraries.pl
 ```
 
 
