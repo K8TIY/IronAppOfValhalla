@@ -12,7 +12,7 @@
   self.showsBorderOnlyWhileMouseInside = YES;
   //self.imagePosition = NSImageOnly;
   self.imageScaling = NSImageScaleProportionallyDown;
-  self.imagePosition = NSImageAbove;
+  self.imagePosition = NSImageLeft;
   NSRect track = [self local_trackingRect];
   NSTrackingArea* trackingArea = [[NSTrackingArea alloc]
                                   initWithRect:track
@@ -31,13 +31,19 @@
   if (_hiliteX)
   {
     NSRect track = [self local_trackingRect];
-    track = NSInsetRect(track, 2, 2);
-    [[[NSColor whiteColor] colorWithAlphaComponent:0.65f] setStroke];
+    //track = NSInsetRect(track, 1, 1);
+    
     // Create our circle path
     NSBezierPath* circlePath = [NSBezierPath bezierPath];
     [circlePath appendBezierPathWithOvalInRect:track];
     // Outline and fill the path
-    [circlePath setLineWidth:4.0];
+    [[NSColor blackColor] setFill];
+    [circlePath fill];
+    track = NSInsetRect(track, 2, 2);
+    circlePath = [NSBezierPath bezierPath];
+    [circlePath appendBezierPathWithOvalInRect:track];
+    [[NSColor whiteColor] setStroke];
+    [circlePath setLineWidth:3.0];
     [circlePath stroke];
     // Inset the circle by 1/4
     NSRect xrect = NSInsetRect(track, track.size.width / 4.0, track.size.height / 4.0);
@@ -60,7 +66,7 @@
   [gc restoreGraphicsState];
 }
 
-#define kFractionOfButton (3.3)
+#define kFractionOfButton (13.0)
 #define kFractionOfButtonMinusOne (kFractionOfButton - 1.0)
 -(NSRect)local_trackingRect
 {
