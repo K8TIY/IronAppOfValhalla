@@ -1,8 +1,8 @@
-## Iron App of Valhalla
 <image width="100" height="100" src="https://blugs.com/IAoV/IAoVIcon.png"
 style="vertical-align:middle;"
 alt="Iron App of Valhalla Icon"/>
-Infinity Engine audio exploration
+## Iron App of Valhalla
+### Infinity Engine audio exploration
 
 
 #### A macOS application for exploring the music, voices, and sounds of Infinity
