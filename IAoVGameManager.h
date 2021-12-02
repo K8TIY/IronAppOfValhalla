@@ -7,6 +7,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+
 @interface IAoVGameManager : NSResponder <GameButtonDelegate,
                                          GameDatabaseProgress>
 {
@@ -17,13 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
   IBOutlet NSTextField*          _dbProgressPath;
   IBOutlet NSProgressIndicator*  _dbProgressProgress;
   NSMutableArray<IAoVGame*>*     _games;
-  NSMutableArray<NSButton*>*     _buttons;
-  NSMutableArray<GameWindow*>*   _gameWindows;
 }
 @property (readonly) NSArray<IAoVGame*>* games;
-@property (readonly) NSArray<GameWindow*>* gameWindows;
 CWL_DECLARE_SINGLETON_FOR_CLASS(IAoVGameManager)
 -(void)addGameAtURL:(NSURL*)url;
+-(NSArray<GameWindow*>*)gameWindows;
 -(IBAction)gameButtonAction:(id)sender;
 -(IBAction)openGameDirectory:(id)sender;
 -(IBAction)dismissInitialHelp:(id)sender;
@@ -32,7 +32,7 @@ CWL_DECLARE_SINGLETON_FOR_CLASS(IAoVGameManager)
 NS_ASSUME_NONNULL_END
 
 /*
-Copyright © 2010-2019, BLUGS.COM LLC
+Copyright © 2010-2021, BLUGS.COM LLC
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

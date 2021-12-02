@@ -3,23 +3,25 @@
 #define kGameButtonWidth 330
 #define kGameButtonHeight 100
 
+// IAoVGame property keys for UI elements
+NSString* kGameWindowKey = @"GameWindow";
+NSString* kGameButtonKey = @"GameButton";
+
 @interface IAoVGameManager (Private)
 -(void)_addGame:(IAoVGame*)game;
 -(void)_recalculateButtonFrames;
 -(void)_resizeMainWindow;
+-(IAoVGame*)_gameForButton:(GameButton*)button;
 @end
 
 @implementation IAoVGameManager
 @synthesize games = _games;
-@synthesize gameWindows = _gameWindows;
 CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
 
 -(id)init
 {
   self = [super init];
   _games = [[NSMutableArray alloc] init];
-  _buttons = [[NSMutableArray alloc] init];
-  _gameWindows = [[NSMutableArray alloc] init];
   return self;
 }
 
@@ -67,10 +69,22 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
   }
 }
 
+-(NSArray<GameWindow*>*)gameWindows
+{
+  NSMutableArray* windows = [[NSMutableArray alloc] init];
+  for (IAoVGame* game in _games)
+  {
+    id w = [game propertyForKey:kGameWindowKey];
+    if (w) [windows addObject:w];
+  }
+  NSArray* ret = [NSArray arrayWithArray:windows];
+  [windows release];
+  return ret;
+}
+
 #pragma mark Private
 -(void)_addGame:(IAoVGame*)game
 {
-  NSUInteger n = [_games count];
   NSRect frame = NSMakeRect(0, 0, kGameButtonWidth, kGameButtonHeight);
   GameButton* button = [[GameButton alloc] initWithFrame:frame];
   [button setTarget:self];
@@ -80,10 +94,10 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
   [button setImage:game.icon];
   button.toolTip = [game.app relativePath];
   [[_mainWindow contentView] addSubview:button];
-  [_buttons addObject:button];
-  [_gameWindows addObject:(GameWindow*)[NSNull null]];
-  [button release];
+  [game setProperty:button forKey:kGameButtonKey];
   [_games addObject:game];
+  [button release];
+  [game release];
   [self _recalculateButtonFrames];
   [self _resizeMainWindow];
 }
@@ -91,8 +105,9 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
 -(void)_recalculateButtonFrames
 {
   NSUInteger n = 0;
-  for (NSButton* button in [[_buttons reverseObjectEnumerator] allObjects])
+  for (IAoVGame* game in [[_games reverseObjectEnumerator] allObjects])
   {
+    NSButton* button = [game propertyForKey:kGameButtonKey];
     NSRect frame = NSMakeRect(0, n * kGameButtonHeight,
                               kGameButtonWidth, kGameButtonHeight);
     [button setFrame:frame];
@@ -124,6 +139,18 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
   [_helpWindow makeKeyAndOrderFront:sender];
 }
 
+-(IAoVGame*)_gameForButton:(GameButton*)button
+{
+  for (IAoVGame* game in [[_games reverseObjectEnumerator] allObjects])
+  {
+    if ([game propertyForKey:kGameButtonKey] == button)
+    {
+      return game;
+    }
+  }
+  return nil;
+}
+
 #pragma mark GameButtonDelegate protocol
 -(void)gameButtonDidClose:(GameButton*)sender
 {
@@ -138,33 +165,35 @@ CWL_SYNTHESIZE_SINGLETON_FOR_CLASS(IAoVGameManager);
   {
     if (returnCode == NSAlertFirstButtonReturn)
     {
-      NSUInteger n = [_buttons indexOfObject:sender];
-      if (n == NSNotFound)
-        NSLog(@"Can't find button %@??", sender);
-      [sender removeFromSuperview];
-      IAoVGame* game = [_games objectAtIndex:n];
-      [game deleteDatabase];
-      [_games removeObjectAtIndex:n];
-      [_buttons removeObjectAtIndex:n];
-      if (!_buttons.count) [_mainWindow orderOut:self];
-      [self _recalculateButtonFrames];
-      [self _resizeMainWindow];
+      IAoVGame* game = [self _gameForButton:sender];
+      if (game)
+      {
+        [sender removeFromSuperview];
+        GameWindow* gw = [game propertyForKey:kGameWindowKey];
+        if (gw) [[gw window] orderOut:self];
+        [game deleteDatabase];
+        [_games removeObject:game];
+        if (!_games.count) [_mainWindow orderOut:self];
+        [self _recalculateButtonFrames];
+        [self _resizeMainWindow];
+      }
+      else
+      {
+        NSLog(@"Can't find game for button %@??", sender);
+      }
     }
   }];
 }
 
 #pragma mark IBAction
--(IBAction)gameButtonAction:(NSButton*)sender
+-(IBAction)gameButtonAction:(GameButton*)sender
 {
-  NSUInteger n = [_buttons indexOfObject:sender];
-  IAoVGame* game = [_games objectAtIndex:n];
-  GameWindow*  gw = [_gameWindows objectAtIndex:n];
-  if ([gw isKindOfClass:[NSNull class]])
-    gw = nil;
+  IAoVGame* game = [self _gameForButton:sender];
+  GameWindow* gw = [game propertyForKey:kGameWindowKey];
   if (!gw)
   {
     gw = [[GameWindow alloc] initWithGame:game];
-    [_gameWindows replaceObjectAtIndex:n withObject:gw];
+    [game setProperty:gw forKey:kGameWindowKey];
     [gw release];
   }
   [gw showWindow:self];

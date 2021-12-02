@@ -258,9 +258,21 @@ NSArray* gGameRegexes = nil;
   if (_root) [_root release];
   if (_MUSs) [_MUSs release];
   if (_BIFFs) [_BIFFs release];
-  if (_gdb) [_gdb release];
   if (_trackTitles) [_trackTitles release];
+  if (_properties) [_properties release];
+  if (_gdb) [_gdb release];
   [super dealloc];
+}
+
+-(id)propertyForKey:(id)key
+{
+  return [_properties objectForKey:key];
+}
+
+-(void)setProperty:(id)property forKey:(id)key
+{
+  if (!_properties) _properties = [[NSMutableDictionary alloc] init];
+  [_properties setObject:property forKey:key];
 }
 
 -(void)deleteDatabase

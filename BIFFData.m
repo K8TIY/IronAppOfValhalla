@@ -33,7 +33,6 @@
 
 -(void)dealloc
 {
-  NSLog(@"DEALLOC for BIFF at %@", _url);
   if (_url) [_url release];
   if (_data) [_data release];
   [super dealloc];
@@ -195,7 +194,7 @@ Done:
 @end
 
 /*
-Copyright © 2010-2019, BLUGS.COM LLC
+Copyright © 2010-2021, BLUGS.COM LLC
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
