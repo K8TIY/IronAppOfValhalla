@@ -82,6 +82,7 @@ typedef enum : NSUInteger
   TLKData*                    _tlk;
   NSString*                   _name; // from plist CFBundleName
   NSImage*                    _icon; // from plist CFBundleIconFile
+  NSMutableDictionary*        _properties; // Hang external stuff like UI elements here
   BOOL                        _isBeamdog; // the app and chitin.key are in e.g. Beamdog Library/00782
   IAoVGameIdentifier          _identifier;
   GameDatabase*               _gdb;
@@ -103,6 +104,8 @@ typedef enum : NSUInteger
 
 +(NSString*)descriptionForVoiceAtURL:(NSURL*)url;
 -(id)initWithURL:(NSURL*)url delegate:(id)delegate error:(NSError**)outError;
+-(id)propertyForKey:(id)key;
+-(void)setProperty:(id)property forKey:(id)key;
 -(void)deleteDatabase;
 -(BOOL)isLoaded;
 -(void)setLocalization:(GameLocalization*)localization female:(BOOL)female;
